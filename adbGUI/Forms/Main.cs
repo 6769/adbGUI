@@ -177,7 +177,8 @@ namespace adbGUI
 
                                 if (!String.IsNullOrEmpty(formMethods.SelectedDevice()))
                                 {
-                                    saveFileDialog.FileName = "screenshot_" + DateTime.Now.ToString().Replace(' ', '_').Replace(':', '.');
+                                    string timeofnow = DateTime.Now.ToString();
+                                    saveFileDialog.FileName = "screenshot_" +timeofnow.Replace(' ', '_').Replace(':', '.').Replace('/','-');
                                     saveFileDialog.Filter = "PNG Image(.png)|*.png";
                                     if (saveFileDialog.ShowDialog() == DialogResult.OK)
                                     {
