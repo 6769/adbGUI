@@ -122,7 +122,8 @@ namespace adbGUI
             }
             else
             {
-                MessageBox.Show("Please enter a command!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Please enter a command!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cmdProcess.StartProcessing("echo \"No input\"", formMethods.SelectedDevice());
             }
         }
 

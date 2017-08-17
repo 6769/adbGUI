@@ -45,6 +45,7 @@ namespace adbGUI
 
         }
 
+
         public void KillServer()
         {
             try

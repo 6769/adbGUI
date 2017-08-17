@@ -11,9 +11,34 @@ namespace adbGUI.Forms
         public InstallUninstall(CmdProcess adbFrm, FormMethods formMethodsFrm)
         {
             InitializeComponent();
+            this.btn_InstallUninstallInstall.DragEnter += new DragEventHandler(Btn_InstallUninstallInstall_DragEnter);
+            this.btn_InstallUninstallInstall.DragDrop += new DragEventHandler(Btn_InstallUninstallInstall_DragDrop);
 
             adb = adbFrm;
             formMethods = formMethodsFrm;
+        }
+        private void Btn_InstallUninstallInstall_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+                e.Effect = DragDropEffects.All;
+            else
+                e.Effect = DragDropEffects.None;
+        }
+        private void Btn_InstallUninstallInstall_DragDrop(object sender,DragEventArgs e)
+        {
+            string[] s = (string[])e.Data.GetData(DataFormats.FileDrop, false);
+            for(int i = 0; i < s.Length; i++)
+            {
+                txt_InstallUninstallPackageInstall.Text = s[i];
+                if (s[i].EndsWith(".apk"))
+                {
+                    var filename = "\"" + txt_InstallUninstallPackageInstall.Text + "\"";
+
+                    adb.StartProcessing("adb install " + s, formMethods.SelectedDevice());
+                    RefreshInstalledApps();
+                }
+                
+            }
         }
 
         private void Btn_InstallUninstallInstall_Click(object sender, EventArgs e)
@@ -30,7 +55,7 @@ namespace adbGUI.Forms
             }
             else
             {
-                MessageBox.Show("Please select a file!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please select a file!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -91,5 +116,7 @@ namespace adbGUI.Forms
 
             cbx_InstallUninstallPackageUninstall.Enabled = true;
         }
+
+        
     }
 }
