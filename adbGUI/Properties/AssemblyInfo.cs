@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die mit einer Assembly verknüpft sind.
 [assembly: AssemblyTitle("adbGUI")]
-[assembly: AssemblyDescription("changed fonts")]
+[assembly: AssemblyDescription("Easy tools for android dev")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany(" Labo")]
 [assembly: AssemblyProduct("adbGUI")]
@@ -32,4 +32,4 @@ using System.Runtime.InteropServices;
 // übernehmen, indem Sie "*" eingeben:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("2.0.1.1")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.2")]
