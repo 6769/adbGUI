@@ -412,5 +412,7 @@ namespace adbGUI.Forms
             lOut.Dispose();
             altAdb.GetProcess.Close();
         }
+
+        
     }
 }

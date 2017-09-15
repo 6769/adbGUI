@@ -34,7 +34,7 @@ namespace adbGUI.Forms
                 {
                     var filename = "\"" + txt_InstallUninstallPackageInstall.Text + "\"";
 
-                    adb.StartProcessing("adb install " + s, formMethods.SelectedDevice());
+                    adb.StartProcessing("adb install " + filename, formMethods.SelectedDevice());
                     RefreshInstalledApps();
                 }
                 
