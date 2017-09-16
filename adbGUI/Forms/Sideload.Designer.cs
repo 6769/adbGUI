@@ -43,9 +43,9 @@
             this.groupBox2.Controls.Add(this.txt_SideloadPath);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.btn_SideloadStart);
-            this.groupBox2.Location = new System.Drawing.Point(12, 12);
+            this.groupBox2.Location = new System.Drawing.Point(12, 11);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(459, 64);
+            this.groupBox2.Size = new System.Drawing.Size(459, 59);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Sideload";
@@ -53,9 +53,9 @@
             // btn_SideloadBrowse
             // 
             this.btn_SideloadBrowse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_SideloadBrowse.Location = new System.Drawing.Point(297, 32);
+            this.btn_SideloadBrowse.Location = new System.Drawing.Point(297, 30);
             this.btn_SideloadBrowse.Name = "btn_SideloadBrowse";
-            this.btn_SideloadBrowse.Size = new System.Drawing.Size(75, 23);
+            this.btn_SideloadBrowse.Size = new System.Drawing.Size(75, 21);
             this.btn_SideloadBrowse.TabIndex = 1;
             this.btn_SideloadBrowse.Text = "Open file";
             this.btn_SideloadBrowse.UseVisualStyleBackColor = true;
@@ -65,26 +65,26 @@
             // 
             this.txt_SideloadPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_SideloadPath.Location = new System.Drawing.Point(6, 35);
+            this.txt_SideloadPath.Location = new System.Drawing.Point(6, 32);
             this.txt_SideloadPath.Name = "txt_SideloadPath";
-            this.txt_SideloadPath.Size = new System.Drawing.Size(285, 20);
+            this.txt_SideloadPath.Size = new System.Drawing.Size(285, 21);
             this.txt_SideloadPath.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 16);
+            this.label1.Location = new System.Drawing.Point(6, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(372, 13);
+            this.label1.Size = new System.Drawing.Size(479, 12);
             this.label1.TabIndex = 1;
             this.label1.Text = "1. Enter Recovery in sideload mode    2. Choose the file, click sideload button";
             // 
             // btn_SideloadStart
             // 
             this.btn_SideloadStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_SideloadStart.Location = new System.Drawing.Point(378, 32);
+            this.btn_SideloadStart.Location = new System.Drawing.Point(378, 30);
             this.btn_SideloadStart.Name = "btn_SideloadStart";
-            this.btn_SideloadStart.Size = new System.Drawing.Size(75, 23);
+            this.btn_SideloadStart.Size = new System.Drawing.Size(75, 21);
             this.btn_SideloadStart.TabIndex = 2;
             this.btn_SideloadStart.Text = "Sideload";
             this.btn_SideloadStart.UseVisualStyleBackColor = true;
@@ -96,13 +96,14 @@
             // 
             // Sideload
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(483, 88);
+            this.ClientSize = new System.Drawing.Size(483, 81);
             this.Controls.Add(this.groupBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Sideload";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sideload";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

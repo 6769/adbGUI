@@ -114,7 +114,7 @@ namespace adbGUI
         {
             string command = cbx_customCommand.Text;
 
-            if (!String.IsNullOrEmpty(command))
+            if (!string.IsNullOrEmpty(command))
             {
                 cbx_customCommand.Items.Add(command);
 

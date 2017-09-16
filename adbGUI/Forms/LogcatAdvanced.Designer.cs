@@ -66,7 +66,6 @@
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.btn_LogcatAdvancedSetBufferSize = new System.Windows.Forms.Button();
             this.txt_LogcatAdvancedBufferSize = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.opt_LogcatAdvancedFilterSilent = new System.Windows.Forms.RadioButton();
@@ -78,6 +77,7 @@
             this.opt_LogcatAdvancedFilterVerbose = new System.Windows.Forms.RadioButton();
             this.btn_LogcatAdvancedStatistics = new System.Windows.Forms.Button();
             this.cbo_LogcatAdvancedSeparateWindow = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -338,7 +338,7 @@
             // 
             this.txt_LogcatAdvancedFilter.Location = new System.Drawing.Point(6, 39);
             this.txt_LogcatAdvancedFilter.Name = "txt_LogcatAdvancedFilter";
-            this.txt_LogcatAdvancedFilter.Size = new System.Drawing.Size(414, 21);
+            this.txt_LogcatAdvancedFilter.Size = new System.Drawing.Size(438, 21);
             this.txt_LogcatAdvancedFilter.TabIndex = 15;
             this.toolTip.SetToolTip(this.txt_LogcatAdvancedFilter, resources.GetString("txt_LogcatAdvancedFilter.ToolTip"));
             // 
@@ -378,7 +378,7 @@
             // 
             this.txt_LogcatAdvancedRegularExpressions.Location = new System.Drawing.Point(6, 18);
             this.txt_LogcatAdvancedRegularExpressions.Name = "txt_LogcatAdvancedRegularExpressions";
-            this.txt_LogcatAdvancedRegularExpressions.Size = new System.Drawing.Size(414, 21);
+            this.txt_LogcatAdvancedRegularExpressions.Size = new System.Drawing.Size(439, 21);
             this.txt_LogcatAdvancedRegularExpressions.TabIndex = 0;
             // 
             // linkLabel1
@@ -480,17 +480,6 @@
             this.txt_LogcatAdvancedBufferSize.Name = "txt_LogcatAdvancedBufferSize";
             this.txt_LogcatAdvancedBufferSize.Size = new System.Drawing.Size(111, 21);
             this.txt_LogcatAdvancedBufferSize.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 402);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(430, 12);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Some options will not work on some devices. All commands were successfully execut" +
-    "ed on LineageOS.";
             // 
             // groupBox8
             // 
@@ -610,18 +599,29 @@
             // cbo_LogcatAdvancedSeparateWindow
             // 
             this.cbo_LogcatAdvancedSeparateWindow.AutoSize = true;
-            this.cbo_LogcatAdvancedSeparateWindow.Location = new System.Drawing.Point(348, 383);
+            this.cbo_LogcatAdvancedSeparateWindow.Location = new System.Drawing.Point(301, 369);
             this.cbo_LogcatAdvancedSeparateWindow.Name = "cbo_LogcatAdvancedSeparateWindow";
             this.cbo_LogcatAdvancedSeparateWindow.Size = new System.Drawing.Size(114, 16);
             this.cbo_LogcatAdvancedSeparateWindow.TabIndex = 15;
             this.cbo_LogcatAdvancedSeparateWindow.Text = "Separate Window";
             this.cbo_LogcatAdvancedSeparateWindow.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(10, 391);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(426, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Some options won\'t work on some devices. All commands run successfully on Lineage" +
+    "OS.";
+            // 
             // LogcatAdvanced
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(474, 419);
+            this.ClientSize = new System.Drawing.Size(474, 410);
             this.Controls.Add(this.cbo_LogcatAdvancedSeparateWindow);
             this.Controls.Add(this.btn_LogcatAdvancedStart);
             this.Controls.Add(this.btn_LogcatAdvancedStop);
@@ -640,6 +640,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "LogcatAdvanced";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Logcat Advanced";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LogcatAdvanced_FormClosing);
             this.groupBox1.ResumeLayout(false);
@@ -695,7 +697,6 @@
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Button btn_LogcatAdvancedSetBufferSize;
         private System.Windows.Forms.TextBox txt_LogcatAdvancedBufferSize;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.RadioButton opt_LogcatAdvancedOutputFormatThreadTime;
         private System.Windows.Forms.RadioButton opt_LogcatAdvancedOutputFormatBrief;
@@ -715,5 +716,6 @@
         private System.Windows.Forms.RadioButton opt_LogcatAdvancedFilterVerbose;
         private System.Windows.Forms.Button btn_LogcatAdvancedStatistics;
         private System.Windows.Forms.CheckBox cbo_LogcatAdvancedSeparateWindow;
+        private System.Windows.Forms.Label label1;
     }
 }

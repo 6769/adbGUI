@@ -23,6 +23,12 @@ namespace adbGUI
         internal static extern bool FreeConsole();
         [DllImport("kernel32.dll")]
         static extern bool SetConsoleCtrlHandler(ConsoleCtrlDelegate HandlerRoutine, bool Add);
+
+        [DllImport("kernel32.dll")]
+        internal static extern uint GetConsoleOutputCP();
+
+
+
         // Delegate type to be used as the Handler Routine for SCCH
         delegate Boolean ConsoleCtrlDelegate(uint CtrlType);
 
@@ -32,27 +38,30 @@ namespace adbGUI
         public event CommandExecutionStoppedHandler CommandExecutionStopped;
         public delegate void CommandExecutionStoppedHandler();
 
-        Process process = new Process
-        {
 
-            StartInfo = new ProcessStartInfo
-            {
-                FileName = "cmd",
-                Arguments = "/K set prompt=INPUT -$G$S",
-                UseShellExecute = false,
-                CreateNoWindow = true,
-                ErrorDialog = false,
-                RedirectStandardOutput = true,
-                RedirectStandardError = true,
-                RedirectStandardInput = true,
-                StandardOutputEncoding = System.Text.Encoding.GetEncoding(437),
-                StandardErrorEncoding = System.Text.Encoding.GetEncoding(437)
-            }
-        };
+        //private static int PAGE_CODE = 936;
+        private Process process;
 
         public CmdProcess()
         {
+            
+            process = new Process
+            {
+                StartInfo = new ProcessStartInfo{
+                    FileName = "cmd",
+                    Arguments = "/K set prompt=INPUT -$G$S",
+                    UseShellExecute = false,
+                    CreateNoWindow = true,
+                    ErrorDialog = false,
+                    RedirectStandardOutput = true,
+                    RedirectStandardError = true,
+                    RedirectStandardInput = true,
+                    StandardOutputEncoding = System.Text.Encoding.Default,
+                    StandardErrorEncoding = System.Text.Encoding.Default
+                }
+            };
             process.EnableRaisingEvents = true;
+
         }
 
         public Process GetProcess
@@ -75,7 +84,7 @@ namespace adbGUI
                 }
                 else
                 {
-                    MessageBox.Show("No device connected. Please connect a device for adb commands.", "Error - No Device Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("No device connected. Please connect a device for adb commands.", "Error - No Device Found", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
 

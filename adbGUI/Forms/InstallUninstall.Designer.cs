@@ -79,6 +79,7 @@
             this.txt_InstallUninstallPackageInstall.Name = "txt_InstallUninstallPackageInstall";
             this.txt_InstallUninstallPackageInstall.Size = new System.Drawing.Size(319, 78);
             this.txt_InstallUninstallPackageInstall.TabIndex = 0;
+            this.txt_InstallUninstallPackageInstall.TextChanged += new System.EventHandler(this.txt_InstallUninstallPackageInstall_TextChanged);
             // 
             // btn_InstallUninstallBrowse
             // 

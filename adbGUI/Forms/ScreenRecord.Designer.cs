@@ -55,32 +55,32 @@
             // txt_screenRecordResolution
             // 
             this.txt_screenRecordResolution.Enabled = false;
-            this.txt_screenRecordResolution.Location = new System.Drawing.Point(6, 42);
+            this.txt_screenRecordResolution.Location = new System.Drawing.Point(6, 39);
             this.txt_screenRecordResolution.Name = "txt_screenRecordResolution";
-            this.txt_screenRecordResolution.Size = new System.Drawing.Size(69, 20);
+            this.txt_screenRecordResolution.Size = new System.Drawing.Size(69, 21);
             this.txt_screenRecordResolution.TabIndex = 0;
             this.txt_screenRecordResolution.Text = "1920x1080";
             // 
             // txt_ScreenRecordBitrate
             // 
-            this.txt_ScreenRecordBitrate.Location = new System.Drawing.Point(6, 42);
+            this.txt_ScreenRecordBitrate.Location = new System.Drawing.Point(6, 39);
             this.txt_ScreenRecordBitrate.Name = "txt_ScreenRecordBitrate";
-            this.txt_ScreenRecordBitrate.Size = new System.Drawing.Size(69, 20);
+            this.txt_ScreenRecordBitrate.Size = new System.Drawing.Size(69, 21);
             this.txt_ScreenRecordBitrate.TabIndex = 1;
             this.txt_ScreenRecordBitrate.Text = "4000000";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 20);
+            this.label2.Location = new System.Drawing.Point(6, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 13);
+            this.label2.Size = new System.Drawing.Size(101, 12);
             this.label2.TabIndex = 3;
             this.label2.Text = "Bitrate in bytes";
             // 
             // trb_screenRecordTimeLimit
             // 
-            this.trb_screenRecordTimeLimit.Location = new System.Drawing.Point(6, 32);
+            this.trb_screenRecordTimeLimit.Location = new System.Drawing.Point(6, 30);
             this.trb_screenRecordTimeLimit.Maximum = 180;
             this.trb_screenRecordTimeLimit.Minimum = 5;
             this.trb_screenRecordTimeLimit.Name = "trb_screenRecordTimeLimit";
@@ -93,26 +93,26 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 16);
+            this.label3.Location = new System.Drawing.Point(6, 15);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
+            this.label3.Size = new System.Drawing.Size(59, 12);
             this.label3.TabIndex = 5;
             this.label3.Text = "Seconds: ";
             // 
             // lbl_screenRecordSeconds
             // 
             this.lbl_screenRecordSeconds.AutoSize = true;
-            this.lbl_screenRecordSeconds.Location = new System.Drawing.Point(67, 16);
+            this.lbl_screenRecordSeconds.Location = new System.Drawing.Point(67, 15);
             this.lbl_screenRecordSeconds.Name = "lbl_screenRecordSeconds";
-            this.lbl_screenRecordSeconds.Size = new System.Drawing.Size(25, 13);
+            this.lbl_screenRecordSeconds.Size = new System.Drawing.Size(23, 12);
             this.lbl_screenRecordSeconds.TabIndex = 6;
             this.lbl_screenRecordSeconds.Text = "180";
             // 
             // btn_screenRecordStart
             // 
-            this.btn_screenRecordStart.Location = new System.Drawing.Point(12, 230);
+            this.btn_screenRecordStart.Location = new System.Drawing.Point(12, 212);
             this.btn_screenRecordStart.Name = "btn_screenRecordStart";
-            this.btn_screenRecordStart.Size = new System.Drawing.Size(100, 23);
+            this.btn_screenRecordStart.Size = new System.Drawing.Size(100, 21);
             this.btn_screenRecordStart.TabIndex = 7;
             this.btn_screenRecordStart.Text = "Start";
             this.btn_screenRecordStart.UseVisualStyleBackColor = true;
@@ -121,9 +121,9 @@
             // cbo_ScreenRecordRotate
             // 
             this.cbo_ScreenRecordRotate.AutoSize = true;
-            this.cbo_ScreenRecordRotate.Location = new System.Drawing.Point(9, 19);
+            this.cbo_ScreenRecordRotate.Location = new System.Drawing.Point(9, 18);
             this.cbo_ScreenRecordRotate.Name = "cbo_ScreenRecordRotate";
-            this.cbo_ScreenRecordRotate.Size = new System.Drawing.Size(147, 17);
+            this.cbo_ScreenRecordRotate.Size = new System.Drawing.Size(168, 16);
             this.cbo_ScreenRecordRotate.TabIndex = 12;
             this.cbo_ScreenRecordRotate.Text = "Rotate output 90 degrees";
             this.cbo_ScreenRecordRotate.UseVisualStyleBackColor = true;
@@ -132,9 +132,9 @@
             // 
             this.groupBox1.Controls.Add(this.cbo_ScreenRecordCustomResolution);
             this.groupBox1.Controls.Add(this.txt_screenRecordResolution);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 11);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(100, 70);
+            this.groupBox1.Size = new System.Drawing.Size(100, 65);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Resolution";
@@ -142,9 +142,9 @@
             // cbo_ScreenRecordCustomResolution
             // 
             this.cbo_ScreenRecordCustomResolution.AutoSize = true;
-            this.cbo_ScreenRecordCustomResolution.Location = new System.Drawing.Point(6, 19);
+            this.cbo_ScreenRecordCustomResolution.Location = new System.Drawing.Point(6, 18);
             this.cbo_ScreenRecordCustomResolution.Name = "cbo_ScreenRecordCustomResolution";
-            this.cbo_ScreenRecordCustomResolution.Size = new System.Drawing.Size(61, 17);
+            this.cbo_ScreenRecordCustomResolution.Size = new System.Drawing.Size(60, 16);
             this.cbo_ScreenRecordCustomResolution.TabIndex = 1;
             this.cbo_ScreenRecordCustomResolution.Text = "Custom";
             this.cbo_ScreenRecordCustomResolution.UseVisualStyleBackColor = true;
@@ -154,9 +154,9 @@
             // 
             this.groupBox2.Controls.Add(this.txt_ScreenRecordBitrate);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(118, 12);
+            this.groupBox2.Location = new System.Drawing.Point(118, 11);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(100, 70);
+            this.groupBox2.Size = new System.Drawing.Size(100, 65);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Bitrate";
@@ -166,9 +166,9 @@
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.lbl_screenRecordSeconds);
             this.groupBox3.Controls.Add(this.trb_screenRecordTimeLimit);
-            this.groupBox3.Location = new System.Drawing.Point(12, 87);
+            this.groupBox3.Location = new System.Drawing.Point(12, 80);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(206, 85);
+            this.groupBox3.Size = new System.Drawing.Size(206, 78);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Time Limit";
@@ -176,18 +176,18 @@
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.cbo_ScreenRecordRotate);
-            this.groupBox5.Location = new System.Drawing.Point(12, 178);
+            this.groupBox5.Location = new System.Drawing.Point(12, 164);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(206, 46);
+            this.groupBox5.Size = new System.Drawing.Size(206, 42);
             this.groupBox5.TabIndex = 17;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Rotate";
             // 
             // btn_SreenRecordAbort
             // 
-            this.btn_SreenRecordAbort.Location = new System.Drawing.Point(118, 230);
+            this.btn_SreenRecordAbort.Location = new System.Drawing.Point(118, 212);
             this.btn_SreenRecordAbort.Name = "btn_SreenRecordAbort";
-            this.btn_SreenRecordAbort.Size = new System.Drawing.Size(100, 23);
+            this.btn_SreenRecordAbort.Size = new System.Drawing.Size(100, 21);
             this.btn_SreenRecordAbort.TabIndex = 18;
             this.btn_SreenRecordAbort.Text = "Abort";
             this.btn_SreenRecordAbort.UseVisualStyleBackColor = true;
@@ -200,9 +200,9 @@
             // 
             // ScreenRecord
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(230, 265);
+            this.ClientSize = new System.Drawing.Size(230, 245);
             this.Controls.Add(this.btn_SreenRecordAbort);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox3);
@@ -212,6 +212,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "ScreenRecord";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ScreenRecord";
             ((System.ComponentModel.ISupportInitialize)(this.trb_screenRecordTimeLimit)).EndInit();
             this.groupBox1.ResumeLayout(false);

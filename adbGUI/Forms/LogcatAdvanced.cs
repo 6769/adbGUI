@@ -304,11 +304,12 @@ namespace adbGUI.Forms
         {
             string outputFilter = "";
 
-            string customOutputFilter = "";
+            //string customOutputFilter = "";
+            var textinput = txt_LogcatAdvancedFilter.Text.Trim();
 
-            if (!String.IsNullOrEmpty(txt_LogcatAdvancedFilter.Text.Trim()))
+            if (!string.IsNullOrEmpty(textinput))
             {
-                outputFilter = " " + txt_LogcatAdvancedFilter.Text.Trim();
+                outputFilter = " " + textinput;
             }
 
             if (opt_LogcatAdvancedFilterVerbose.Checked)
@@ -386,10 +387,9 @@ namespace adbGUI.Forms
             {
                 return " -v brief";
             }
-            else
-            {
-                return "";
-            }
+            
+            return "";
+            
         }
 
         private void Btn_LogcatAdvancedStatistics_Click(object sender, EventArgs e)

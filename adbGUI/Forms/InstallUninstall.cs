@@ -117,6 +117,9 @@ namespace adbGUI.Forms
             cbx_InstallUninstallPackageUninstall.Enabled = true;
         }
 
-        
+        private void txt_InstallUninstallPackageInstall_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

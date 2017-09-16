@@ -42,18 +42,18 @@
             this.groupBox9.Controls.Add(this.btn_showDpi);
             this.groupBox9.Controls.Add(this.btn_setDpi);
             this.groupBox9.Controls.Add(this.txt_phoneDpi);
-            this.groupBox9.Location = new System.Drawing.Point(12, 12);
+            this.groupBox9.Location = new System.Drawing.Point(12, 11);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(349, 49);
+            this.groupBox9.Size = new System.Drawing.Size(349, 45);
             this.groupBox9.TabIndex = 14;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Change DPI";
             // 
             // btn_resetDpi
             // 
-            this.btn_resetDpi.Location = new System.Drawing.Point(186, 19);
+            this.btn_resetDpi.Location = new System.Drawing.Point(186, 18);
             this.btn_resetDpi.Name = "btn_resetDpi";
-            this.btn_resetDpi.Size = new System.Drawing.Size(75, 23);
+            this.btn_resetDpi.Size = new System.Drawing.Size(75, 21);
             this.btn_resetDpi.TabIndex = 31;
             this.btn_resetDpi.Text = "Reset";
             this.btn_resetDpi.UseVisualStyleBackColor = true;
@@ -61,9 +61,9 @@
             // 
             // btn_showDpi
             // 
-            this.btn_showDpi.Location = new System.Drawing.Point(267, 19);
+            this.btn_showDpi.Location = new System.Drawing.Point(267, 18);
             this.btn_showDpi.Name = "btn_showDpi";
-            this.btn_showDpi.Size = new System.Drawing.Size(75, 23);
+            this.btn_showDpi.Size = new System.Drawing.Size(75, 21);
             this.btn_showDpi.TabIndex = 30;
             this.btn_showDpi.Text = "Show current DPI";
             this.btn_showDpi.UseVisualStyleBackColor = true;
@@ -71,9 +71,9 @@
             // 
             // btn_setDpi
             // 
-            this.btn_setDpi.Location = new System.Drawing.Point(105, 19);
+            this.btn_setDpi.Location = new System.Drawing.Point(105, 18);
             this.btn_setDpi.Name = "btn_setDpi";
-            this.btn_setDpi.Size = new System.Drawing.Size(75, 23);
+            this.btn_setDpi.Size = new System.Drawing.Size(75, 21);
             this.btn_setDpi.TabIndex = 29;
             this.btn_setDpi.Text = "Set";
             this.btn_setDpi.UseVisualStyleBackColor = true;
@@ -81,22 +81,23 @@
             // 
             // txt_phoneDpi
             // 
-            this.txt_phoneDpi.Location = new System.Drawing.Point(6, 21);
+            this.txt_phoneDpi.Location = new System.Drawing.Point(6, 19);
             this.txt_phoneDpi.Name = "txt_phoneDpi";
-            this.txt_phoneDpi.Size = new System.Drawing.Size(93, 20);
+            this.txt_phoneDpi.Size = new System.Drawing.Size(93, 21);
             this.txt_phoneDpi.TabIndex = 28;
             this.txt_phoneDpi.Text = "480";
             // 
             // Density
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(373, 73);
+            this.ClientSize = new System.Drawing.Size(373, 67);
             this.Controls.Add(this.groupBox9);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Density";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DpiChange";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DpiChange_KeyDown);
             this.groupBox9.ResumeLayout(false);

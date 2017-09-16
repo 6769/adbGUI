@@ -40,7 +40,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(690, 367);
+            this.panel1.Size = new System.Drawing.Size(690, 339);
             this.panel1.TabIndex = 13;
             // 
             // rtb_console
@@ -52,19 +52,20 @@
             this.rtb_console.Location = new System.Drawing.Point(0, 0);
             this.rtb_console.Name = "rtb_console";
             this.rtb_console.ReadOnly = true;
-            this.rtb_console.Size = new System.Drawing.Size(688, 365);
+            this.rtb_console.Size = new System.Drawing.Size(688, 337);
             this.rtb_console.TabIndex = 11;
             this.rtb_console.Text = "";
             this.rtb_console.WordWrap = false;
             // 
             // LogcatOutput
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(690, 367);
+            this.ClientSize = new System.Drawing.Size(690, 339);
             this.Controls.Add(this.panel1);
             this.Name = "LogcatOutput";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LogcatOutput";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LogcatOutput_FormClosing);
             this.panel1.ResumeLayout(false);
