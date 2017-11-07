@@ -13,6 +13,9 @@ namespace adbGUI
 {
     public class CmdProcess
     {
+        private const string ERROR_MSG = "No device connected. Please connect a device for adb commands.";
+        private const string ERROR_TITLE = "Error - No Device Found";
+
         // Thanks to Vitaliy Fedorchenko
         internal const int CTRL_C_EVENT = 0;
         [DllImport("kernel32.dll")]
@@ -26,6 +29,9 @@ namespace adbGUI
 
         [DllImport("kernel32.dll")]
         internal static extern uint GetConsoleOutputCP();
+
+        [DllImport("user32.dll", SetLastError = true)]
+        static extern int MessageBoxTimeout(IntPtr hwnd, String text, String title, uint type, Int16 wLanguageId, Int32 milliseconds);
 
 
 
@@ -84,7 +90,8 @@ namespace adbGUI
                 }
                 else
                 {
-                    MessageBox.Show("No device connected. Please connect a device for adb commands.", "Error - No Device Found", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBoxTimeout((IntPtr) 0, ERROR_MSG, ERROR_TITLE, 48, 0, 1600);
+                    //MessageBox.Show(ERROR_MSG,ERROR_TITLE , MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
 
@@ -280,7 +287,7 @@ namespace adbGUI
 
 
 
-            string pathsUsr = Environment.GetEnvironmentVariable("PATH", EnvironmentVariableTarget.User);
+            string pathsUsr = Environment.GetEnvironmentVariable("PATH");
 
             string[] pathsUsrArr = pathsUsr.Split(new char[1] { Path.PathSeparator });
 
